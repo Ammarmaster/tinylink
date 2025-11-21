@@ -42,7 +42,7 @@ const PORT = process.env.PORT || 4000;
 mongoose.connect(process.env.MONGO_URI, { dbName: 'tinylink' })
   .then(() => {
     console.log('Mongo connected');
-    app.listen(PORT, () => console.log('Server running on', PORT));
+    app.listen(PORT, () => console.log('Server running'));
   })
   .catch(err => {
     console.error('Mongo connection error', err);
